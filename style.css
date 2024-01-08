@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1e8ed;
+}
+
+/* Profile Image Styles */
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #2258ed;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* Profile Card Container Styles */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(245, 222, 179, 0.745);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  border-radius: 25px;
+  padding: 25px;
+  position: relative;
+}
+
+/* Gradient Background Overlay on Profile Card */
+.profile-card::before {
+  content: "";
+  top: 0;
+  position: absolute;
+  border-radius: 25px 25px 0 0;
+  height: 40%;
+  width: 100%;
+  background-color: #4070e4;
+}
+
+/* Hover Effect on Profile Card */
+.profile-card:hover {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(245, 222, 179, 0.532);
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+/* Text Data Styles */
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.text-data .name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text-data .job {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Social Media Buttons Styles */
+.profile-card .media-button {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.media-button .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #4070e4;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 25% 10%;
+  color: azure;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.media-button .link:hover {
+  transform: scale(1.15);
+  border-radius: 10% 25%;
+  transform: scale(0.9);
+  background-color: #e44070;
+}
+
+/* Navigation Buttons Styles */
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons .button {
+  background-color: #4070e4;
+  padding: 8px 12px;
+  margin: 0 10px;
+  border-radius: 25px;
+  border: none;
+  color: azure;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.buttons .button:hover {
+  background-color: #e44070;
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+/* Additional Styles for Span */
+span {
+  text-align: center;
+}
